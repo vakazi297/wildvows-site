@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Wild Vows</title>
+  <meta name="description" content="Contact Hadalcore about Wild Vows.">
+  <link rel="canonical" href="https://wildvows.app/contact/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="../">Wild Vows <small>Elopement companion</small></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../">Home</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="../terms/">Terms</a>
+        <a href="./" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" style="margin-bottom:2rem;">
+      <p class="hero__eyebrow">We’re here</p>
+      <h1>Contact Wild Vows</h1>
+      <p class="hero__lead">Questions about the app, privacy, press, or partnerships—send a note. We read every message.</p>
+    </section>
+
+    <div class="form-card">
+      <form action="https://formsubmit.co/info@hadalcore.com" method="POST">
+        <input type="hidden" name="_subject" value="Wild Vows — website contact">
+        <input type="hidden" name="_next" value="https://wildvows.app/thanks/">
+        <input type="hidden" name="_captcha" value="true">
+
+        <div class="honey" aria-hidden="true">
+          <label>Company <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+          <small>We’ll reply to this address.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic" required>
+            <option value="" disabled selected>Select…</option>
+            <option value="General">General question</option>
+            <option value="Privacy / data">Privacy or data request</option>
+            <option value="Subscriptions / billing">Subscriptions or billing (Apple)</option>
+            <option value="Bug report">Bug report</option>
+            <option value="Press / partnership">Press or partnership</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="How can we help?"></textarea>
+        </div>
+
+        <button class="btn btn--primary" type="submit" style="width:100%; border:none;">Send message</button>
+        <p class="meta" style="margin:1rem 0 0; font-size:0.85rem;">
+          Delivered via <a href="https://formsubmit.co" rel="noopener">FormSubmit</a>. By sending, you agree we may use your message to respond and to keep a record of our correspondence.
+        </p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>© <span id="y"></span> Hadalcore</p>
+      <nav aria-label="Footer">
+        <a href="../privacy/">Privacy</a>
+        <a href="../terms/">Terms</a>
+        <a href="./">Contact</a>
+      </nav>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
