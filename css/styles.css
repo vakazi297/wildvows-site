@@ -386,3 +386,8 @@ main {
 .thanks h1 {
   margin-top: 0;
 }
+.site-logo__image {
+    height: 60px;
+    width: auto;
+    display: block;
+}
